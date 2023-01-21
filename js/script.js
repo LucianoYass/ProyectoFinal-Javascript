@@ -7,7 +7,7 @@ const botonEnviar = document.getElementById('enviarConsulta');
 let carrito = JSON.parse(localStorage.getItem("Carrito")) || [];
 
 const pedirPosts = async () => {
-    const resp = await fetch("../js/local.json");
+    const resp = await fetch("../local.json");
     const data = await resp.json();
 
     data.forEach((producto) => {
